@@ -5,3 +5,11 @@ body.dark-mode {
 body.light-mode {
   background-color: #eee;
 }
+
+body.dark-mode a{
+  background-color: #eee;
+}
+
+body.light-mode a{
+  background-color: #111;
+}
