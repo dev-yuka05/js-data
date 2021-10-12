@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="selectBox" name="selectBox">
+        <option value="" selected="selected">전체</option>
+        <option value="option1">옵션1</option>
+        <option value="option2">옵션2</option>
+        <option value="option3">옵션3</option>
+    </select>
+    
+    <div class="layer">내용</div>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+       $(document).ready(function() {
+  $('#selectBox').change(function() {
+        var result = $('#selectBox option:selected').val();
+        if (result == 'option2') {
+        $('.layer').show();
+        } else {
+        $('.layer').hide();
+        }
+    });
+    });
+    </script>
+</body>
+</html>
