@@ -9,12 +9,12 @@ var lang = lang.substr(0,2)
 
 // 한국어
 if (lang == "ko")
-window.location.replace('https://brazens.studio/ko-KR')
+window.location.replace('페이지')
 
 // 일본어
 else if (lang == "ja")
-window.location.replace('https://brazens.studio/ja-JP')
+window.location.replace('페이지')
 
 // 그외 지역은 영어로 연결
 else
-window.location.replace('https://brazens.studio/en')
+window.location.replace('페이지')
